@@ -5,7 +5,7 @@ const Socket_URL = import.meta.env.VITE_SOCKET_URL || "http://localhost:5000";
 
 export function useSocket() {
   const socketRef = useRef(null);
-  const [connected, setIsConnected] = useState(false);
+ const [connected, setConnected] = useState(false);
   const [streamingText, setStreamingText] = useState("");
   const [isStreaming, setIsStreaming] = useState(false);
 
