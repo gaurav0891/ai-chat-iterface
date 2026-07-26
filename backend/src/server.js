@@ -1,11 +1,9 @@
+import "dotenv/config";
 import express from "express";
 import http from "http";
 import { Server } from "socket.io";
-import dotenv from "dotenv";
 import cors from "cors";
 import { registerChatSocket } from "./sockets/chatSocket.js";
-
-dotenv.config();
 
 const app = express();
 const server = http.createServer(app);
